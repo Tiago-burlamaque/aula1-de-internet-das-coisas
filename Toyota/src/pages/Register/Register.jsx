@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router'
+import { toast } from 'react-toastify'
 
 function Register() {
   const [nome, setNome] = useState("")
@@ -9,23 +10,30 @@ function Register() {
 
   const navigate = useNavigate()
 
-  const handleRegister = (e) => {
+  const handleRegister = async(e) => {
     e.preventDefault()
 
-    axios.post("http://localhost:3000/usuarios", {
-      nome: nome,
-      email: email,
-      senha: senha
-    })
-      .then(function () {
-        alert("Usuário cadastrado com sucesso!!!",
-          navigate("/")
-        )
-      })
-      .catch(function (error) {
-        alert("Erro no servidor!!!")
-        console.log(error)
-      })
+    try {
+      await axios.post('http://localhost:3000/usuarios', { nome, email, senha });
+
+      
+      
+      toast.success('Usuário criado com sucesso!', {
+        // position: toast.POSITION.TOP_CENTER,
+        autoClose: 2000,
+        hideProgressBar: true,
+      });
+      navigate("/")
+    } catch (error) {
+      console.error('Erro ao criar usuário:', error);
+      toast.error('Erro ao criar o usuário!', {
+        // position: toast.POSITION.TOP_RIGHT,
+        autoClose: 2000,
+        hideProgressBar: true,
+      });
+      setIsSaving(false);
+    }
+
   }
   return (
     <section className='h-screen bg-red-500 flex items-center justify-center'>
