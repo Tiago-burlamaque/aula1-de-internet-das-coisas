@@ -5,9 +5,9 @@ const db = mysql.createPool({
     user: 'root',
     password: 'senai',
     database: "gestao_frota",
-    waitForConnections: true,
-    connectionLimit: 10,
-    queueLimit: 0
+    // waitForConnections: true,
+    // connectionLimit: 10,
+    // queueLimit: 0
 });
 
 export default db;

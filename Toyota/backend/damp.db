@@ -17,3 +17,11 @@ CREATE TABLE `gestao_frota`.`veiculo` (
   `datahora_exclusao` DATETIME NULL,
   `ativo` INT NULL DEFAULT 1,
   PRIMARY KEY (`idveiculo`));
+
+CREATE TABLE `gestao_frota`.`usuario` (
+  `idusuario` INT NOT NULL AUTO_INCREMENT,
+  `nome` VARCHAR(45) NULL,
+  `email` VARCHAR(150) NULL,
+  `senha` VARCHAR(45) NULL,
+  `ativo` INT NULL DEFAULT 1,
+  PRIMARY KEY (`idusuario`));

@@ -14,7 +14,7 @@ function Register() {
     e.preventDefault()
 
     try {
-      await axios.post('http://localhost:3000/usuarios', { nome, email, senha });
+      await axios.post('http://localhost:3000/usuario', { nome, email, senha });
 
       
       
@@ -31,7 +31,6 @@ function Register() {
         autoClose: 2000,
         hideProgressBar: true,
       });
-      setIsSaving(false);
     }
 
   }

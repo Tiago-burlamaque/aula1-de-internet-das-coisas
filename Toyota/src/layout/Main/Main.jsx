@@ -26,7 +26,7 @@ const Main = () => {
         </header>
 
         {/* Aqui entram as páginas internas do dashboard */}
-        <section className="flex-1 p-6 overflow-y-auto">
+        <section>
           <Outlet />
         </section>
       </main>

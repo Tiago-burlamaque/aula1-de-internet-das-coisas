@@ -40,7 +40,7 @@ function LoginForm() {
       login(email); // <-- atualiza contexto
       toast.success('Login realizado com sucesso!', { autoClose: 2000 });
 
-      setTimeout(() => navigate('/dashboard'), 2000);
+      setTimeout(() => navigate('/home'), 2000);
     } catch (error) {
       console.error('Erro ao verificar o usuário:', error);
       toast.error('Erro ao conectar com o servidor.', { autoClose: 2000 });

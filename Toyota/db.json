@@ -1,37 +1,10 @@
 {
   "usuarios": [
     {
-      "id": "a017",
-      "email": "futlastf998@gmail.com",
-      "senha": "futlast2024"
-    },
-    {
-      "id": "897a",
-      "email": "futlastf998@gmail.com",
-      "senha": "gutlast2024"
-    },
-    {
-      "id": "ab5e",
-      "email": "futlastf998@gmail.com",
-      "senha": "futlast2024"
-    },
-    {
-      "id": "37fb",
-      "nome": "tiago",
-      "email": "futlastf998@gmail.com",
-      "senha": "futlast2024"
-    },
-    {
-      "id": "982d",
-      "nome": "tiago",
-      "email": "futlastf998@gmail.com",
-      "senha": "futlast2024"
-    },
-    {
-      "id": "ab39",
-      "nome": "tiago",
-      "email": "futlastf998@gmail.com",
-      "senha": "futlast2024"
+      "id": "ee03",
+      "nome": "Duda",
+      "email": "duda@gmail.com",
+      "senha": "duda123"
     }
   ]
 }

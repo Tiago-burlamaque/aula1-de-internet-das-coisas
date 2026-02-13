@@ -2,9 +2,11 @@ import React from 'react'
 
 function Home() {
   return (
-    <div>
-      
-    </div>
+    <section className='h-screen'>
+      <main className='h-screen bg-red-500'>
+        
+      </main>
+    </section>
   )
 }
 
